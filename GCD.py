@@ -17,10 +17,14 @@
 
 def gcd(a,b):
     assert int(a)==a and int(b)==b, " The number must be Integer only! "
+    if a<0:
+        return -1*a
+    if b<0:
+        return -1*b
     if b==0:
         return a
     else:
         return gcd(b, a%b)
 print(gcd(48,18))
 # print(gcd(3,1.4))
-# print(gcd(22,-2))
+print(gcd(22,-2))
