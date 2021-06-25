@@ -1,0 +1,9 @@
+def reverse(array):
+    for i in range(0, int(len(array)/2)): ---O(n/2)--O(n)
+        others=len(array)-1-i -----O(1)
+        temp=array[i] -----O(1)
+        array[i]=array[others] ----O(1)
+        array[others]=array[temp] ----O(1)
+    print(array) ----O(1)
+
+hence the time complexity= O(n)

@@ -1,0 +1,9 @@
+def printUnorderPairs(arrayA,arrayB):
+    for i in range(0,len(arrayA)): --O(a)
+        for j in range(0,len(arrayB)): --O(b)
+            for k in range(0,100000):
+                print(str(arrayA[i])+","+str(arrayB[j]) --O(1)
+
+100,000 is constant so O(1)
+
+so time complexity=O(ab)

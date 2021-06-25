@@ -1,0 +1,23 @@
+def factorial(n): ---M(n)
+    if n<0:                             |
+        return -1                       |
+    if n==0:                            |----O(1)
+        return 0                        |
+    else:
+        return n*factorial(n-1) ------M(n-1)
+
+n!=1*2*3*4*5....*n
+3!=1*2*3=6
+M(n)=O(1)+M(n-1)
+M(0)=O(1)
+M(n-1)=O(1)+M((n-1)-1)
+O(1)=1
+
+M(n)=1+M(n-1)
+    =1+ (1+M((n-1)-1))
+    =2+M(n-1)
+    =a+M(n-a)
+    =n+M(n-n)
+    =n+1
+    =n
+Time complexity =O(n)
