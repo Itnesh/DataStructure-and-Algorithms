@@ -1,0 +1,13 @@
+def powerof2(n):
+    if n<0:             |
+        return 0        |
+    elif n==1:          |---O(1)
+        return 1        |
+        print(1)        |
+    else:
+        prev=powerof2(int(n/2)) ---O(logn)
+        curr=prev*2 ---O(1)
+        return curr
+        print(curr)
+
+Time comlexity =O(logN)
