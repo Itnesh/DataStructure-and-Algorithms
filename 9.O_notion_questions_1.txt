@@ -1,0 +1,20 @@
+# It's use to calculate the rum time and space comlexity of any code
+# Rule 1: Any assignment and if statement has constant time comlexity. i.e o(1)
+# Rule 2: Any for loop withought any nested loop time complexity is linear. i.e o(n)
+# Rule 3: Any nested loop has time complexity is quadrilateral . i.e o(2^n)
+# Rule 4: for multiple statement we just simple adding
+# Lets see the top 10 question
+
+def operation(array):
+    sum=0 -----------O(1)
+    product=1 -------O(1)
+    
+    for i in array: --O(n)
+        sum+=i -------O(1)
+    for i in array: --O(n)
+        product*=i ---O(1)
+    print(f"Sum {sum} product {product}")--O(1)
+
+so Time complexity = O(n)
+
+by the method of constant removal so 2 O(n)~O(n) and constant removed just its so short in front of O(n)
