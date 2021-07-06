@@ -1,0 +1,35 @@
+def printUnorderPairs(array):
+    for i in range(0,len(array)):
+        for j in range(i+1, len(array)):
+            print(array[i]+","+array[j])
+
+
+Time complexity = O(n^2)
+
+1. Counting the itration
+1st --- (n-1)
+2nd  ---(n-2)
+.
+.
+.
+1
+
+1+2+3+4......(n-2)+(n-1)
+=n(n-1)/2
+= n^2 - n/2
+~ n^2
+
+Average Work
+outer loop - n times
+inner loop 
+10
+9
+.
+.
+.
+1
+Average=5 =10/2
+n/2
+Means Average Work n^2/2
+
+Hence time complexity O(n^2)
